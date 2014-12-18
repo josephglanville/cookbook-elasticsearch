@@ -74,20 +74,6 @@ default['elasticsearch']['conf'] = {
       concurrent_streams: 5
     }
   },
-  discovery: {
-    zen: {
-      minimum_master_nodes: 1,
-      ping: {
-        timeout: '3s',
-        multicast: {
-          enabled: false
-        },
-        unicast: {
-          hosts: []
-        }
-      }
-    }
-  },
   monitor: {
     jvm: {
       gc: {
