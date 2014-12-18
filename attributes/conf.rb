@@ -49,7 +49,7 @@ default['elasticsearch']['conf'] = {
   path: {
     conf: '/etc/elasticsearch',
     data: '/var/lib/elasticsearch',
-    work: '/tmp/elasticsaerch',
+    work: '/tmp/elasticsearch',
     logs: '/var/log/elasticsearch',
     plugins: '/usr/share/elasticsearch/plugins'
   },
