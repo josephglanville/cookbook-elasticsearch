@@ -1,3 +1,3 @@
 service 'elasticsearch' do
-  action :nothing
+  action :enable
 end
