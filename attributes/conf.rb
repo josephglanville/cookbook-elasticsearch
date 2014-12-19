@@ -53,9 +53,6 @@ default['elasticsearch']['conf'] = {
     logs: '/var/log/elasticsearch',
     plugins: '/usr/share/elasticsearch/plugins'
   },
-  bootstrap: {
-    mlockall: true
-  },
   transport: {
     tcp: {
       port: 9300,
