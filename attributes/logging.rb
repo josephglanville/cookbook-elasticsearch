@@ -23,7 +23,8 @@ default['elasticsearch']['logging'] = {
       'layout' => {
         'type' => 'pattern',
         'conversionPattern' => '[%d{ISO8601}][%-5p][%-25c] %m%n'
-      }
+      },
+      'maxBackupIndex' => 7
     },
     'index_search_slow_log_file' => {
       'type' => 'dailyRollingFile',
@@ -32,7 +33,8 @@ default['elasticsearch']['logging'] = {
       'layout' => {
         'type' => 'pattern',
         'conversionPattern' => '[%d{ISO8601}][%-5p][%-25c] %m%n'
-      }
+      },
+      'maxBackupIndex' => 7
     },
     'index_indexing_slow_log_file' => {
       'type' => 'dailyRollingFile',
@@ -41,7 +43,8 @@ default['elasticsearch']['logging'] = {
       'layout' => {
         'type' => 'pattern',
         'conversionPattern' => '[%d{ISO8601}][%-5p][%-25c] %m%n'
-      }
+      },
+      'maxBackupIndex' => 7
     }
   }
 }
