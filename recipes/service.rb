@@ -9,4 +9,4 @@ file '/etc/init.d/elasticsearch' do
   notifies :run, 'execute[disable-elasticsearch]'
 end
 
-file '/etc/init/elasticsearch.comf'
+cookbook_file '/etc/init/elasticsearch.conf'
