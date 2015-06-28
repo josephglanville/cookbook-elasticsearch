@@ -8,8 +8,9 @@ NODE_MEM = 1024
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Would be great if there was an official box with both
   # VMWare Fusion and VirtualBox support
-  config.vm.box = 'nitrous-io/trusty64'
+  config.vm.box = 'petejkim/trusty64'
   config.omnibus.chef_version = :latest
+  config.cache.scope = :box if Vagrant.has_plugin?('vagrant-cachier')
 
   config.vm.provider :virtualbox do |vb|
     vb.customize ['modifyvm', :id, '--memory', NODE_MEM]
