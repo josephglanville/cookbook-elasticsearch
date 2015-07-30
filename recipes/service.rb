@@ -9,4 +9,6 @@ file '/etc/init.d/elasticsearch' do
   notifies :run, 'execute[disable-elasticsearch]'
 end
 
-cookbook_file '/etc/init/elasticsearch.conf'
+template '/etc/init/elasticsearch.conf' do
+  variables mem: node['elasticsearch']['memory']
+end
